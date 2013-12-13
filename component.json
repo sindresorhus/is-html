@@ -1,6 +1,6 @@
 {
   "name": "is-html",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Check if a string is HTML",
   "license": "MIT",
   "main": "is-html.js",
