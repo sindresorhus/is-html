@@ -14,7 +14,7 @@
 	}
 
 	function isHtml(str) {
-		if (/\s?<!doctype html>|(<html[^>]*>|<body[^>]*>|<x-[^>]+>)+/i.test(str)) {
+		if (/\s?<!doctype html>|(<html\b[^>]*>|<body\b[^>]*>|<x-[^>]+>)+/i.test(str)) {
 			return true;
 		}
 
