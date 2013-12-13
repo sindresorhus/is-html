@@ -14,7 +14,7 @@
     "node": ">=0.8.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "mocha"
   },
   "files": [
     "is-html.js"
