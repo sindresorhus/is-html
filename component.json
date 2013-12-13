@@ -1,0 +1,21 @@
+{
+  "name": "is-html",
+  "version": "0.0.0",
+  "description": "Check if a string is HTML",
+  "license": "MIT",
+  "main": "is-html.js",
+  "repo": "sindresorhus/is-html",
+  "scripts": ["is-html.js"],
+  "keywords": [
+    "html",
+    "detect",
+    "check",
+    "is",
+    "tags",
+    "elements",
+    "string"
+  ],
+  "dependencies": {
+    "sindresorhus/html-tags": "~0.1.0"
+  }
+}

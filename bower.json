@@ -1,0 +1,30 @@
+{
+  "name": "is-html",
+  "version": "0.0.0",
+  "description": "Check if a string is HTML",
+  "license": "MIT",
+  "main": "is-html.js",
+  "authors": [{
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  }],
+  "keywords": [
+    "html",
+    "detect",
+    "check",
+    "is",
+    "tags",
+    "elements",
+    "string"
+  ],
+  "ignore": [
+    ".*",
+    "test.js",
+    "component.json",
+    "package.json"
+  ],
+  "dependencies": {
+    "html-tags": "~0.1.0"
+  }
+}

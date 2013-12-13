@@ -1,0 +1,25 @@
+'use strict';
+var assert = require('assert');
+var isHtml = require('./is-html');
+
+
+it('should detect HTML if it has doctype', function () {
+	assert(isHtml('<!doctype html>'));
+	assert(isHtml('\n\n<!doctype html><html>'));
+});
+
+it('should detect HTML if it has <html>, <body> or <x-*>', function () {
+	assert(isHtml('<html>'));
+	assert(isHtml('<html></html>'));
+	assert(isHtml('<html><body></html>'));
+	assert(isHtml('<x-unicorn>'));
+});
+
+it('should detect HTML if it contains any of the standard HTML tags', function () {
+	assert(isHtml('<p>foo</p>'));
+	assert(isHtml('<a href="#">foo</a>'));
+});
+
+it('should not match XML', function () {
+	assert(!isHtml('<cake>foo</cake>'));
+});
