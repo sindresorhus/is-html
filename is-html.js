@@ -14,12 +14,12 @@
 	}
 
 	function isHtml(str) {
-		if (/\s?<!doctype html>|(<html[^>]*>|<body[^>]*>|<x-[^>]+>)+/i.test(str)) {
+		if (/\s?<!doctype html>|(<html\b[^>]*>|<body\b[^>]*>|<x-[^>]+>)+/i.test(str)) {
 			return true;
 		}
 
 		var re = new RegExp(htmlTags.map(function (el) {
-			return '<' + el + '[^>]*>';
+			return '<' + el + '\\b[^>]*>';
 		}).join('|'), 'i');
 
 		if (re.test(str)) {
