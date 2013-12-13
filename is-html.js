@@ -19,7 +19,7 @@
 		}
 
 		var re = new RegExp(htmlTags.map(function (el) {
-			return '<' + el + '[^>]*>';
+			return '<' + el + '\\b[^>]*>';
 		}).join('|'), 'i');
 
 		if (re.test(str)) {

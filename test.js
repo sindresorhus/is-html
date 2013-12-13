@@ -22,4 +22,5 @@ it('should detect HTML if it contains any of the standard HTML tags', function (
 
 it('should not match XML', function () {
 	assert(!isHtml('<cake>foo</cake>'));
+	assert(!isHtml('<any>rocks</any>'));
 });
