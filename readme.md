@@ -36,7 +36,10 @@ var isHtml = require('is-html');
 
 ##### Bower
 
+You need the dependency [html-tags](https://github.com/sindresorhus/html-tags) for better detection.
+
 ```html
+<script src="bower_components/is-html/html-tags.js"></script>
 <script src="bower_components/is-html/is-html.js"></script>
 ```
 
