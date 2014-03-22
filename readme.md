@@ -1,4 +1,4 @@
-# is-html [![Build Status](https://secure.travis-ci.org/sindresorhus/is-html.png?branch=master)](http://travis-ci.org/sindresorhus/is-html)
+# is-html [![Build Status](https://travis-ci.org/sindresorhus/is-html.svg?branch=master)](https://travis-ci.org/sindresorhus/is-html)
 
 > Check if a string is HTML
 
@@ -7,45 +7,24 @@
 
 Download [manually](https://github.com/sindresorhus/is-html/releases) or with a package-manager.
 
-#### [npm](https://npmjs.org/package/is-html)
-
-```
-npm install --save is-html
+```bash
+$ npm install --save is-html
 ```
 
-#### [Bower](http://bower.io)
-
-```
-bower install --save is-html
+```bash
+$ bower install --save is-html
 ```
 
-#### [Component](https://github.com/component/component)
-
-```
-component install sindresorhus/is-html
+```bash
+$ component install sindresorhus/is-html
 ```
 
 
-## Example
-
-##### Node.js
+## Usage
 
 ```js
 var isHtml = require('is-html');
-```
 
-##### Bower
-
-You need the dependency [html-tags](https://github.com/sindresorhus/html-tags) for better detection.
-
-```html
-<script src="bower_components/is-html/html-tags.js"></script>
-<script src="bower_components/is-html/is-html.js"></script>
-```
-
-##### Usage
-
-```js
 isHtml('<p>I am HTML</p>');
 //=> true
 
@@ -59,7 +38,9 @@ isHtml('>+++++++>++++++++++>+++>+<<<<-');
 //=> false
 ```
 
+Can be used with require, global and AMD in the browser.
+
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)

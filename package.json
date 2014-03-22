@@ -3,7 +3,6 @@
   "version": "0.1.1",
   "description": "Check if a string is HTML",
   "license": "MIT",
-  "main": "is-html.js",
   "repository": "sindresorhus/is-html",
   "author": {
     "name": "Sindre Sorhus",
@@ -11,13 +10,14 @@
     "url": "http://sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "browser": "a=$npm_package_name; browserify -r ./index:$a -s $a index.js -o browser.js"
   },
   "files": [
-    "is-html.js"
+    "index.js"
   ],
   "keywords": [
     "html",
@@ -29,9 +29,10 @@
     "string"
   ],
   "dependencies": {
-    "html-tags": "~0.1.0"
+    "html-tags": "^0.3.0"
   },
   "devDependencies": {
-    "mocha": "~1.x"
+    "mocha": "*",
+    "browserify": "^3.0.0"
   }
 }

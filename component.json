@@ -3,9 +3,10 @@
   "version": "0.1.1",
   "description": "Check if a string is HTML",
   "license": "MIT",
-  "main": "is-html.js",
   "repo": "sindresorhus/is-html",
-  "scripts": ["is-html.js"],
+  "scripts": [
+    "index.js"
+  ],
   "keywords": [
     "html",
     "detect",
@@ -16,6 +17,6 @@
     "string"
   ],
   "dependencies": {
-    "sindresorhus/html-tags": "~0.1.0"
+    "sindresorhus/html-tags": "~0.3.0"
   }
 }

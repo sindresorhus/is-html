@@ -3,12 +3,14 @@
   "version": "0.1.1",
   "description": "Check if a string is HTML",
   "license": "MIT",
-  "main": "is-html.js",
-  "authors": [{
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
-  }],
+  "main": "browser.js",
+  "authors": [
+    {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "url": "http://sindresorhus.com"
+    }
+  ],
   "keywords": [
     "html",
     "detect",
@@ -20,11 +22,9 @@
   ],
   "ignore": [
     ".*",
-    "test.js",
     "component.json",
-    "package.json"
-  ],
-  "dependencies": {
-    "html-tags": "~0.1.0"
-  }
+    "package.json",
+    "test.js",
+    "index.js"
+  ]
 }
