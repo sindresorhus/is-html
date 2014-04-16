@@ -5,8 +5,6 @@
 
 ## Install
 
-Download [manually](https://github.com/sindresorhus/is-html/releases) or with a package-manager.
-
 ```bash
 $ npm install --save is-html
 ```
@@ -23,8 +21,6 @@ $ component install sindresorhus/is-html
 ## Usage
 
 ```js
-var isHtml = require('is-html');
-
 isHtml('<p>I am HTML</p>');
 //=> true
 
@@ -37,8 +33,6 @@ isHtml('<cake>I am XML</cake>');
 isHtml('>+++++++>++++++++++>+++>+<<<<-');
 //=> false
 ```
-
-Can be used with require, global and AMD in the browser.
 
 
 ## License
