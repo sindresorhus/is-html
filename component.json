@@ -1,9 +1,9 @@
 {
   "name": "is-html",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Check if a string is HTML",
   "license": "MIT",
-  "repo": "sindresorhus/is-html",
+  "repository": "sindresorhus/is-html",
   "scripts": [
     "index.js"
   ],
