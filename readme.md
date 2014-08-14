@@ -5,16 +5,8 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save is-html
-```
-
-```bash
-$ bower install --save is-html
-```
-
-```bash
-$ component install sindresorhus/is-html
 ```
 
 
@@ -37,4 +29,4 @@ isHtml('>+++++++>++++++++++>+++>+<<<<-');
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)

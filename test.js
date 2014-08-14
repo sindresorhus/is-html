@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var isHtml = require('./index');
+var isHtml = require('./');
 
 it('should detect HTML if it has doctype', function () {
 	assert(isHtml('<!doctype html>'));

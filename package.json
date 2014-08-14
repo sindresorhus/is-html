@@ -13,8 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha",
-    "browser": "browserify -s $npm_package_name -o browser.js ."
+    "test": "mocha"
   },
   "files": [
     "index.js"
@@ -29,10 +28,9 @@
     "string"
   ],
   "dependencies": {
-    "html-tags": "^0.3.0"
+    "html-tags": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "*",
-    "browserify": "^3.0.0"
+    "mocha": "*"
   }
 }
