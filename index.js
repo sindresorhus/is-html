@@ -10,9 +10,5 @@ module.exports = function (str) {
 		return '<' + el + '\\b[^>]*>';
 	}).join('|'), 'i');
 
-	if (re.test(str)) {
-		return true;
-	}
-
-	return false;
+	return re.test(str);
 };
