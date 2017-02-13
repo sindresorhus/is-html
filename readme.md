@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save is-html
 ```
 
@@ -13,6 +13,8 @@ $ npm install --save is-html
 ## Usage
 
 ```js
+const isHtml = require('is-html');
+
 isHtml('<p>I am HTML</p>');
 //=> true
 
@@ -29,4 +31,4 @@ isHtml('>+++++++>++++++++++>+++>+<<<<-');
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
