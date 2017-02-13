@@ -1,14 +1,15 @@
 'use strict';
 var htmlTags = require('html-tags');
 
+var basic = /\s?<!doctype html>|(<html\b[^>]*>|<body\b[^>]*>|<x-[^>]+>)+/i,
+	full = new RegExp(htmlTags.map(function (el) {
+			return '<' + el + '\\b[^>]*>';
+		}).join('|'), 'i');
+
 module.exports = function (str) {
-	if (/\s?<!doctype html>|(<html\b[^>]*>|<body\b[^>]*>|<x-[^>]+>)+/i.test(str)) {
+	if (basic.test(str)) {
 		return true;
 	}
 
-	var re = new RegExp(htmlTags.map(function (el) {
-		return '<' + el + '\\b[^>]*>';
-	}).join('|'), 'i');
-
-	return re.test(str);
+	 return full.test(str);
 };
