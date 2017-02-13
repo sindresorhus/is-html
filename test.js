@@ -1,29 +1,28 @@
-'use strict';
-var assert = require('assert');
-var isHtml = require('./');
+import test from 'ava';
+import m from '.';
 
-it('should detect HTML if it has doctype', function () {
-	assert(isHtml('<!doctype html>'));
-	assert(isHtml('\n\n<!doctype html><html>'));
+test('detect HTML if it has doctype', t => {
+	t.true(m('<!doctype html>'));
+	t.true(m('\n\n<!doctype html><html>'));
 });
 
-it('should detect HTML if it has <html>, <body> or <x-*>', function () {
-	assert(isHtml('<html>'));
-	assert(isHtml('<html></html>'));
-	assert(isHtml('<html lang="en"></html>'));
-	assert(isHtml('<html><body></html>'));
-	assert(isHtml('<html><body class="no-js"></html>'));
-	assert(isHtml('<x-unicorn>'));
+test('detect HTML if it has <html>, <body> or <x-*>', t => {
+	t.true(m('<html>'));
+	t.true(m('<html></html>'));
+	t.true(m('<html lang="en"></html>'));
+	t.true(m('<html><body></html>'));
+	t.true(m('<html><body class="no-js"></html>'));
+	t.true(m('<x-unicorn>'));
 });
 
-it('should detect HTML if it contains any of the standard HTML tags', function () {
-	assert(isHtml('<p>foo</p>'));
-	assert(isHtml('<a href="#">foo</a>'));
+test('detect HTML if it contains any of the standard HTML tags', t => {
+	t.true(m('<p>foo</p>'));
+	t.true(m('<a href="#">foo</a>'));
 });
 
-it('should not match XML', function () {
-	assert(!isHtml('<cake>foo</cake>'));
-	assert(!isHtml('<any>rocks</any>'));
-	assert(!isHtml('<htmly>not</htmly>'));
-	assert(!isHtml('<bodyx>not</bodyx>'));
+test('not match XML', t => {
+	t.false(m('<cake>foo</cake>'));
+	t.false(m('<any>rocks</any>'));
+	t.false(m('<htmly>not</htmly>'));
+	t.false(m('<bodyx>not</bodyx>'));
 });
