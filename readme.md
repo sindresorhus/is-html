@@ -28,6 +28,8 @@ isHtml('>+++++++>++++++++++>+++>+<<<<-');
 //=> false
 ```
 
+Note: It does not detect deprecated HTML tags.
+
 
 ## License
 
