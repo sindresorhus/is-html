@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save is-html
+$ npm install is-html
 ```
 
 
@@ -29,8 +29,3 @@ isHtml('>+++++++>++++++++++>+++>+<<<<-');
 ```
 
 Note: It does not detect deprecated HTML tags.
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
