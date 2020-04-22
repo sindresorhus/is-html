@@ -1,7 +1,7 @@
 'use strict';
-const htmlTags = require('html-tags');
 
+const simple = /^\s*</;
 const basic = /\s?<!doctype html>|(<html\b[^>]*>|<body\b[^>]*>|<x-[^>]+>)+/i;
-const full = new RegExp(htmlTags.map(tag => `<${tag}\\b[^>]*>`).join('|'), 'i');
+let full;
 
-module.exports = string => basic.test(string) || full.test(string);
+module.exports = string => simple.test(string) || basic.test(string) || full || (full = new RegExp(require('html-tags').map(tag => `<${tag}\\b[^>]*>`).join('|'), 'i'))
