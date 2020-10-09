@@ -1,14 +1,14 @@
-# is-html [![Build Status](https://travis-ci.org/sindresorhus/is-html.svg?branch=master)](https://travis-ci.org/sindresorhus/is-html)
+# is-html [![Build Status](https://travis-ci.com/sindresorhus/is-html.svg?branch=master)](https://travis-ci.com/github/sindresorhus/is-html)
 
 > Check if a string is HTML
 
+You should not use this for any kind of validation, sanitation, or XSS checks.
 
 ## Install
 
 ```
 $ npm install is-html
 ```
-
 
 ## Usage
 
