@@ -1,4 +1,4 @@
-# is-html [![Build Status](https://travis-ci.com/sindresorhus/is-html.svg?branch=master)](https://travis-ci.com/github/sindresorhus/is-html)
+# is-html
 
 > Check if a string is HTML
 
