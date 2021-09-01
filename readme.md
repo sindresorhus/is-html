@@ -13,7 +13,7 @@ $ npm install is-html
 ## Usage
 
 ```js
-const isHtml = require('is-html');
+import isHtml from 'is-html';
 
 isHtml('<p>I am HTML</p>');
 //=> true

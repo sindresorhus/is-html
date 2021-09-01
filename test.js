@@ -1,5 +1,5 @@
 import test from 'ava';
-import isHtml from '.';
+import isHtml from './index.js';
 
 test('detect HTML if it has doctype', t => {
 	t.true(isHtml('<!doctype html>'));
