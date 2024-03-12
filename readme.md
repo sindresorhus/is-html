@@ -6,8 +6,8 @@ You should not use this for any kind of validation, sanitation, or XSS checks.
 
 ## Install
 
-```
-$ npm install is-html
+```sh
+npm install is-html
 ```
 
 ## Usage
